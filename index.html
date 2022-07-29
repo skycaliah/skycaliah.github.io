@@ -38,7 +38,7 @@
 		}
 		
 		.educationTable{
-		border-collapse: separate;
+		<!--border-collapse: separate; -->
 		border-spacing: 30px 0;
 		
 		}
@@ -49,13 +49,14 @@
 		
 		}
 		
-		.jobs{
-			colspan = "3";
-		
-		}
-		
-	
 
+		.jobs {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px;
+            padding: 2px;
+            color: #34282C;
+        }
 		
 		</style> 
 		
@@ -95,8 +96,6 @@
 		 
 		 </div>
 		 
-		
-
 		 <!--Section about me  -->
 		 <div class = "aboutMe">
 		 
@@ -114,17 +113,16 @@
 		<!--Work Experience-->
 		<h3 id = "work experience"> Work Experience </h3>
 		
-		<table width="500px" border="0" cellspacing="0" cellpadding="0"> 
+		<table width="500px" border="10" cellspacing="0" cellpadding="1"> 
 		<!-- First Job --> 
 		
 			<tbody>
 				<tr>
-				<div class = "jobs" >
-					<td > City of Riverside </td> 
-					<td > Pool Manager </td>
-					<td > February 2018 - Present </td> 
-				</div>
 				
+					<td class = "jobs" > City of Riverside </td> 
+					<td class = "jobs"> Pool Manager </td>
+					<td class = "jobs"> February 2018 - Present </td> 
+			
 				</tr>
 				
 				<tr>
@@ -148,7 +146,7 @@
 		<h3 id = "education"> Education </h3>
 		
 		
-		<table class = "educationTable">
+		<table class = "educationTable" width="900px" border="10" cellspacing="0" cellpadding="10">
 			<tbody>
 			
 			<tr>
@@ -199,7 +197,7 @@
 			
 		<!-- List of a few projects i've completed --> 
 		<h3 id = "projects"> Projects </h3>
-			<table>
+			<table >
 				<tbody>
 				
 					<tr>
