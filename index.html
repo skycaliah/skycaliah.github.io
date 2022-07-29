@@ -2,7 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title> Skyler Caliah Saltos </title>
+		<title> skyCaliah </title>
+		<link rel = "shortcut icon" href = "images/favicon.ico">
 		
 		<!--Add embedded styles-->
 		
@@ -13,6 +14,16 @@
 			
 			
 		}
+		
+		.subHeading{
+			font-family: "Times New Roman", Times, serif;
+		}
+		
+		.aboutMe{
+			font-family: "Times New Roman", Times, serif;
+		}
+		
+
 		
 		img {
 		display: block;
@@ -27,13 +38,25 @@
 		}
 		
 		.educationTable{
-		border-collapse: separate;
-		border-spacing: 50px 0;
+		<!--border-collapse: separate; -->
+		border-spacing: 30px 0;
 		
 		}
 		
-	
+		.workExp{
+		border-collapse: separate;
+		border-spacing: 0px 0;
+		
+		}
+		
 
+		.jobs {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px;
+            padding: 2px;
+            color: #34282C;
+        }
 		
 		</style> 
 		
@@ -47,13 +70,15 @@
 		 <!--Image of myself   -->
 		<img src = "images/skylerphoto.JPG"
 		 alt = "Skyler with ducks in New York"
-		 width = "250" height "200"
+		 width = "350" height "300"
 		 id ="headShot"
 		 >
 		
 		 
 		  <!--Small header about myself-->
-		 <h2 id = "Subheading" align = "center" > UCR Computer Engineering </h2>
+		 <div class = "subHeading">
+		 <h2 id = "subheading" align = "center" > UCR Computer Engineering </h2>
+		 </div>
 		 
 		 <!--Social Media. Placed in div to be spaced and moved around together -->
 		 <div id = "social">
@@ -65,31 +90,43 @@
 		 <a href="https://github.com/skycaliah"> 
 		 <img src = "images/githubicon.png"  alt = "github icon link" height = "50" > 
 		 
+		 <a href = "https://www.instagram.com/sky.saltos/" >
+		 <img src = "images/instagramIcon.png" alt = "instagram icon link" height = "50" > 
 		 </a> 
 		 
 		 </div>
 		 
 		 <!--Section about me  -->
-		 <h3 id = "About me" >A little about me </h3>
+		 <div class = "aboutMe">
+		 
+
+		 <h3 id = "About me" >A little about me</h3>
+		 
+		 
 		 <p> Hello, my name is Skyler Saltos and I am a Computer Engineering student at UCR. I love working with embedded systems
 			  and taking a more literal hands on approach to engineering. I've built various software and hardware based projects and enjoy
 			  combining the two together. On my free time I enjoy water sports, playing grand strategy video games, and spending time
 			  with friends and family.<p>
 			  
+		</div>
+			  
 		<!--Work Experience-->
 		<h3 id = "work experience"> Work Experience </h3>
 		
-		<table> 
+		<table width="500px" border="10" cellspacing="0" cellpadding="1"> 
 		<!-- First Job --> 
 		
 			<tbody>
 				<tr>
-					<td> <strong> City of Riverside, Pool Manager </strong> </td> 
-					<td> February 2018 - Present </td> 
+				
+					<td class = "jobs" > City of Riverside </td> 
+					<td class = "jobs"> Pool Manager </td>
+					<td class = "jobs"> February 2018 - Present </td> 
+			
 				</tr>
 				
-				<tr colspan = "3">
-					<td>
+				<tr>
+					<td colspan = "3" >
 						<ul>
 							<li> Supervise over the safety of patrons on the pool deck</li>
 							<li> Supervise facility, manage guard trainings, handle interactions with community	</li>
@@ -109,7 +146,7 @@
 		<h3 id = "education"> Education </h3>
 		
 		
-		<table class = "educationTable">
+		<table class = "educationTable" width="900px" border="10" cellspacing="0" cellpadding="10">
 			<tbody>
 			
 			<tr>
@@ -160,7 +197,7 @@
 			
 		<!-- List of a few projects i've completed --> 
 		<h3 id = "projects"> Projects </h3>
-			<table>
+			<table >
 				<tbody>
 				
 					<tr>
