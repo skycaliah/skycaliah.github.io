@@ -8,12 +8,8 @@
 		<!--Add embedded styles-->
 		
 		<style>
-		#name {
-			font-style: italic;
-			color: #EE9A4D;<!-- Brown Sand Orange --> 
-			
-			
-		}
+
+		<!-- ------------BEGIN style for div class------------- -->
 		
 		.subHeading{
 			font-family: "Times New Roman", Times, serif;
@@ -27,19 +23,6 @@
 			font-family: Arial, Helvetica, sans-serif;
 		}
 
-		
-		img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		
-		}
-		
-		#social {
-		display:flex;
-		justify-content: center;
-		}
-		
 		.educationTable{
 		<!--border-collapse: separate; -->
 		border-spacing: 30px 0;
@@ -61,6 +44,54 @@
             color: #34282C;
         }
 		
+		img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		
+		}
+		
+		<!-- -------------END style for div class----------------- --> 
+		
+		<!-- -------------BEGIN style for ids---------------------- -->		
+		
+		#name {
+			font-style: italic;
+			color: #EE9A4D; <!-- Brown Sand Orange --> 	
+		}
+		
+		#social {
+		display:flex;
+		justify-content: center;
+		}
+		
+		
+		#coursework{
+			color: orange;
+		}
+		
+		#education{
+			color: orange;
+		}
+		
+		#workExperience{
+			color: orange;
+			
+		}
+		
+		#AboutMe{
+			color: orange;
+		}
+		
+		#technicalSkill{
+			color:orange;
+		}
+		
+		#projects{
+			color:orange;
+		}
+		
+		<!-- -------------END style for ids---------------------- -->		
 		
 		
 		</style> 
@@ -75,8 +106,8 @@
 		 <!--Image of myself   -->
 		<img src = "images/skylerphoto.JPG"
 		 alt = "Skyler with ducks in New York"
-		 width = "350" height "300"
-		 id ="headShot"
+		 width = "250" height "200"
+		 id ="headShot" border="5"
 		 >
 		
 		 
@@ -105,7 +136,7 @@
 		 <div class = "aboutMe">
 		 
 
-		 <h3 id = "About me" class = "headers">A little about me</h3>
+		 <h3 id = "AboutMe" class = "headers">A little about me</h3>
 		 
 		 
 		 <p> Hello, my name is Skyler Saltos and I am a Computer Engineering student at UCR. I love working with embedded systems
@@ -116,11 +147,12 @@
 		</div>
 			  
 		<!--Work Experience-->
-		<h3 id = "work experience" class = "headers"> Work Experience </h3>
+		<h3 id = "workExperience" class = "headers"> Work Experience </h3>
 		
-		<table width="500px" border="0" cellspacing="0" cellpadding="0"> 
-		<!-- First Job --> 
+		<table width="500px" border="2" cellspacing="0" cellpadding="2"> 
 		
+
+		<!-- First Job --> 		
 			<tbody>
 				<tr>
 				
@@ -151,7 +183,7 @@
 		<h3 id = "education" class = "headers"> Education </h3>
 		
 		
-		<table class = "educationTable" width="900px" border="0" cellspacing="0" cellpadding="0">
+		<table class = "educationTable" width="900px" border="2" cellspacing="0" cellpadding="2">
 			<tbody>
 			
 			<tr>
@@ -191,7 +223,7 @@
 			
 			
 		<!-- List of some technical skills developed thus far -->
-		<h3 id = "technical skill" class = "headers"> Skills </h3>
+		<h3 id = "technicalSkill" class = "headers"> Skills </h3>
 			<ul>
 				<li> C++,C,Java,Python </li>
 				<li> Clion, ArduinoIDE, Git, Github </li>
@@ -202,12 +234,12 @@
 			
 		<!-- List of a few projects i've completed --> 
 		<h3 id = "projects" class = "headers" > Projects </h3>
-			<table >
+			<table width="900px" border="2" cellspacing="5" cellpadding="2">
 				<tbody>
 				
 					<tr>
 						<th> <a href="https://youtu.be/mWwM1NjN9bI"> <img src = "images/catProjectIcon.png"
-						alt = "cat icon for project" height = "50" ></a></th>
+						alt = "cat icon for project" height = "50" > </a> CatDeterrent</th>
 					
 					</tr> 
 					
@@ -226,7 +258,7 @@
 					
 					
 				<tr> <th> <a href="https://youtu.be/IQGlk3UKsIw"> <img src = "images/laserProjectIcon.png" 
-				alt = "laser icon for projct" height = "40" > </a> </th> </tr> 
+				alt = "laser icon for projct" height = "40" > </a> LaserSecure</th> </tr> 
 					<tr>
 						<td> 
 							<ul>
@@ -243,7 +275,7 @@
 				
 				
 					<tr> <th> <a href="https://youtu.be/tDhCL565qCk"> <img src = "images/spaceInvadersIcon.png"
-					alt = "space invaders icon for project" height = "50" ></a>  </th> </tr> 
+					alt = "space invaders icon for project" height = "50" ></a>  SpaceInvaders</th> </tr> 
 					<tr>
 						<td> 
 							<ul>
@@ -265,9 +297,5 @@
 
 	</body>
 	
-	
-	
-
-
 
 </html>
